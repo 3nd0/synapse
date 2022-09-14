@@ -4,5 +4,18 @@
   "description": "app",
   "main": "index.js",
   "author": "wataru.endo",
-  "license": "MIT"
+  "license": "MIT",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "client",
+      "api"
+    ],
+    "nohoist": [
+      "**/client",
+      "**/client/**",
+      "**/api",
+      "**/api/**"
+    ]
+  }
 }
